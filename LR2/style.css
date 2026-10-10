@@ -1,0 +1,124 @@
+
+
+.lab-table {
+    border-collapse: collapse;
+    width: 800px;
+    max-width: 100%;
+    table-layout: fixed;
+    margin-top: 20px;
+}
+
+.lab-table td {
+    border: 2px solid #333;
+    height: 35px;
+    padding: 4px;
+    text-align: center;
+    vertical-align: middle;
+    overflow-wrap: anywhere;
+}
+
+.traffic-light-position {
+    position: relative;
+    width: 100px;
+    height: 240px;
+    background-color: #dddddd;
+    border: 2px solid #333333;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.traffic-light-position .light {
+    position: absolute;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #333333;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.traffic-light-position .red {
+    top: 20px;
+    background-color: red;
+}
+
+.traffic-light-position .yellow {
+    top: 95px;
+    background-color: yellow;
+}
+
+.traffic-light-position .green {
+    top: 170px;
+    background-color: #00a651;
+}
+
+.traffic-light-transform {
+    width: 100px;
+    height: 240px;
+    background-color: #dddddd;
+    border: 2px solid #333333;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.traffic-light-transform .light {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #333333;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    transform: translateX(25px) translateY(20px);
+}
+
+.traffic-light-transform .red {
+    background-color: red;
+}
+
+.traffic-light-transform .yellow {
+    background-color: yellow;
+}
+
+.traffic-light-transform .green {
+    background-color: #00a651;
+}
+
+.traffic-lights-container {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.traffic-light-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.traffic-light-item h3 {
+    text-align: center;
+}
+
+.lab-table tr:nth-child(-n+2) td {
+    background-color: #018f8f;
+    color: white;
+}
+
+.lab-table tr:nth-child(n+3) td {
+    background-color: #f5f501;
+    color: black;
+}
+
+.lab-table:has(tr:nth-child(1):hover) tr:nth-child(-n+2) td,
+.lab-table:has(tr:nth-child(2):hover) tr:nth-child(-n+2) td {
+    background-color: #f5f501;
+    color: black;
+}
+.lab-table:has(tr:nth-child(3):hover) tr:nth-child(n+3) td,
+.lab-table:has(tr:nth-child(4):hover) tr:nth-child(n+3) td {
+    background-color: #018f8f;
+    color: white;
+}
+
+
