@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Павленко Є.В. | ІС-43 | ЛР5 | Варіант 141</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Лабораторна робота №5</h1>
+    <h2>JavaScript. Події. Регулярні вирази</h2>
+
+    <h3>Завдання 1. Перевірка даних форми</h3>
+
+<form id="user-form" novalidate>
+    <div class="form-group">
+        <label for="fullName">ПІБ:</label>
+        <input
+            type="text"
+            id="fullName"
+            placeholder="Павленко Єва Василівна"
+        >
+        <span class="error-message"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="birthDate">Дата народження:</label>
+        <input
+            type="text"
+            id="birthDate"
+            placeholder="20.11.2006"
+        >
+        <span class="error-message"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="address">Адреса:</label>
+        <input
+            type="text"
+            id="address"
+            placeholder="м. Київ"
+        >
+        <span class="error-message"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input
+            type="text"
+            id="email"
+            placeholder="example@gmail.com"
+        >
+        <span class="error-message"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="telegram">Telegram:</label>
+        <input
+            type="text"
+            id="telegram"
+            placeholder="@T_1234"
+        >
+        <span class="error-message"></span>
+    </div>
+
+    <button type="submit">Перевірити дані</button>
+</form>
+
+    <h3>Завдання 2. Інтерактивна таблиця 6×6</h3>
+
+<div class="table-controls">
+    <label for="color-picker">Оберіть колір:</label>
+    <input type="color" id="color-picker" value="#8ecae6">
+</div>
+
+<table id="interactive-table"></table>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+
+/* Завдання 1. Форма введення даних */
+
+#user-form {
+    width: 400px;
+    max-width: 100%;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background-color: #f7f9fc;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    outline: 2px solid #8bb8e8;
+}
+
+.form-group input.invalid {
+    border: 2px solid #d62828;
+    background-color: #ffe5e5;
+}
+
+.error-message {
+    display: block;
+    color: #d62828;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#user-form button {
+    padding: 10px 20px;
+    background-color: #4d84b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#user-form button:hover {
+    background-color: #356b9f;
+}
+
+/* Завдання 2. Інтерактивна таблиця */
+
+.table-controls {
+    margin: 15px 0;
+}
+
+#color-picker {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#interactive-table {
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#interactive-table td {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #333333;
+    text-align: center;
+    font-size: 18px;
+}
+
+#interactive-table td.target-cell {
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid #315c83;
+}
